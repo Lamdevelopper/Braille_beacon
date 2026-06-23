@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Open Braille Beacon is an open, offline concept for helping blind and low-vision people locate existing Braille and tactile signage.">
+    <meta name="theme-color" content="#111111">
+    <title>Open Braille Beacon — haptic system.</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
+    <header class="site-header" data-header>
+      <a class="brand" href="#top" aria-label="Open Braille Beacon home">
+        <span class="brand-mark" aria-hidden="true"><img src="assets/brand-logo-sheet.webp" alt=""></span>
+        <span class="brand-name"><span>Open</span><span>Braille</span><span>Beacon</span></span>
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">Menu</button>
+      <nav id="primary-nav" class="primary-nav" aria-label="Primary navigation">
+        <a href="#system">System</a>
+        <a href="#progress">Progress</a>
+        <a href="#contribute">Contribute</a>
+        <a class="nav-github" href="https://github.com/Lamdevelopper/Open-Braille_beacon" target="_blank" rel="noreferrer">GitHub</a>
+      </nav>
+    </header>
+
+    <main id="main-content">
+      <section id="top" class="hero" aria-labelledby="hero-title">
+        <img class="hero-media" src="assets/hero-system-concept.webp" alt="Concept visual showing the haptic receiver and BLE wall tag as the two parts of the Open Braille Beacon system." fetchpriority="high">
+        <div class="hero-shade" aria-hidden="true"></div>
+        <div class="hero-content">
+          <div class="hero-copy-block">
+            <p class="eyebrow">OPEN BRAILLE BEACON / CONCEPT SYSTEM</p>
+            <h1 id="hero-title">Find the sign.<br><em>Feel the way.</em></h1>
+            <p class="hero-copy">A silent wall tag and a wearable haptic receiver, to help people locate existing tactile and Braille signage.</p>
+            <div class="action-row">
+              <a class="button button-light" href="#how-it-works">Explore the system</a>
+              <a class="button button-quiet" href="https://github.com/Lamdevelopper/Open-Braille_beacon" target="_blank" rel="noreferrer">Explore on GitHub</a>
+            </div>
+          </div>
+        </div>
+        <p class="media-note">Concept visual · Device details subject to validation</p>
+        <a class="scroll-cue" href="#problem">Scroll to explore</a>
+      </section>
+
+      <section id="problem" class="section problem" aria-labelledby="problem-title">
+        <div class="section-label" data-reveal>01 / THE GAP</div>
+        <div class="problem-grid">
+          <h2 id="problem-title" data-reveal>Braille signs are essential.<br><span>But they only help once you’ve found them.</span></h2>
+          <div class="body-large" data-reveal>
+            <p>The problem is discovery: tactile signs are useful only after someone has found the door, elevator, exit, stairway, information point, or Braille sign that carries them.</p>
+            <p class="caution">It is not indoor navigation, obstacle detection, or a replacement for a white cane, guide dog, orientation and mobility training, tactile signage, or personal safety judgment.</p>
+          </div>
+        </div>
+        <div class="friction-grid" data-reveal>
+          <article><p class="eyebrow eyebrow-dark">THE EXISTING SIGN</p><h3>Essential, but easy to miss.</h3><p>It contains the right information, but only once the person is already standing at the correct place.</p></article>
+          <article><p class="eyebrow eyebrow-dark">PHONE-FIRST TOOLS</p><h3>Useful, but can add friction.</h3><p>They may require a screen, audio, headphones, an account, or a reliable connection when a simple physical cue would do.</p></article>
+          <article><p class="eyebrow eyebrow-dark">INDOOR NAVIGATION</p><h3>A different, larger promise.</h3><p>It can need maps and infrastructure—and should not imply a precise route, direction, or guarantee of safe passage.</p></article>
+        </div>
+      </section>
+
+      <section id="signage-cue" class="signage-scene" aria-labelledby="signage-title">
+        <img src="assets/tactile-sign-and-tag-concept.webp" alt="Concept visual of a silent BLE wall beacon installed beside a tactile Braille sign.">
+        <div class="signage-scene__shade" aria-hidden="true"></div>
+        <div class="signage-scene__content" data-reveal>
+          <p class="section-label section-label--light">02 / THE CUE STAYS WITH THE SIGN</p>
+          <h2 id="signage-title">The sign is still<br><em>the destination.</em></h2>
+          <p>A compact beacon sits beside the existing tactile sign. The receiver helps someone locate that point; the tactile sign remains the source of information.</p>
+          <dl class="signage-principles">
+            <div><dt>Placement</dt><dd>Beside existing tactile signage</dd></div>
+            <div><dt>Signal</dt><dd>Silent BLE identifier</dd></div>
+            <div><dt>Boundary</dt><dd>Assistive cue, not navigation</dd></div>
+          </dl>
+        </div>
+        <p class="signage-scene__note">Concept visual · Installation details subject to validation</p>
+      </section>
+
+      <section id="system" class="section system" aria-labelledby="system-title">
+        <div class="section-heading">
+          <div class="section-label" data-reveal>03 / TWO QUIET DEVICES</div>
+          <h2 id="system-title" data-reveal>One tag on the wall.<br>One destination in hand.</h2>
+        </div>
+        <div class="device-grid">
+          <article class="device-card device-card--tag" data-reveal>
+            <div class="device-card__copy">
+              <p class="eyebrow eyebrow-dark">WALL BEACON TAG</p>
+              <h3>Silent by design.</h3>
+              <p>A compact BLE tag sits beside an existing tactile point of interest. It advertises a small identifier and minimal metadata—without sound, cloud services, or tracking.</p>
+              <dl class="spec-list">
+                <div><dt>Power</dt><dd>One CR2032 in v1</dd></div>
+                <div><dt>Signal</dt><dd>Bluetooth Low Energy</dd></div>
+                <div><dt>Role</dt><dd>Marks a tactile point</dd></div>
+              </dl>
+            </div>
+            <figure class="device-card__image"><img src="assets/tag-exploded-concept.webp" alt="Concept render showing the wall beacon tag and its proposed internal architecture."><figcaption>Concept render · Tag architecture</figcaption></figure>
+          </article>
+
+          <article class="device-card device-card--receiver" data-reveal>
+            <div class="device-card__copy">
+              <p class="eyebrow eyebrow-dark">HAPTIC RECEIVER CLIP</p>
+              <h3>Private feedback, one selected destination to avoid noise.</h3>
+              <p>A wearable receiver scans a space, lets the user select one compatible tag, then uses haptics as the selected signal becomes stronger.</p>
+              <dl class="spec-list">
+                <div><dt>Interaction</dt><dd>One-button concept</dd></div>
+                <div><dt>Feedback</dt><dd>Haptic, not constant audio</dd></div>
+                <div><dt>Focus</dt><dd>Navigate to one destination with out noise</dd></div>
+              </dl>
+            </div>
+            <figure class="device-card__image receiver-image"><img src="assets/receiver-render-concept.webp" alt="Concept render of the compact wearable haptic receiver clip."><figcaption>Concept render · Receiver Clip</figcaption></figure>
+          </article>
+        </div>
+      </section>
+
+      <section id="how-it-works" class="guide" aria-labelledby="guide-title">
+        <div class="guide-intro">
+          <div class="section-label section-label--light" data-reveal>04 / HAPTIC SYSTEM</div>
+          <h2 id="guide-title" data-reveal>Feedback you can feel.<br><em>One calm signal.</em></h2>
+          <p data-reveal>Guide mode intentionally ignores every unselected beacon. Haptic feedback stays private, local, and focused on the destination the user chose.</p>
+        </div>
+        <figure class="haptic-feature" data-reveal>
+          <img src="assets/haptic-feedback-concept.webp" alt="Concept visual of the haptic receiver with subtle local vibration rings around its tactile button.">
+          <figcaption class="haptic-feature__copy">
+            <p class="eyebrow">HAPTIC, NOT CONSTANT AUDIO</p>
+            <h3>Rhythm communicates proximity.</h3>
+            <p>The receiver can shift from slow to faster pulses as the approximate signal of the selected tag changes.</p>
+          </figcaption>
+        </figure>
+        <ol class="flow-board" aria-label="Receiver interaction flow">
+          <li data-reveal><p class="flow-number">01</p><p class="flow-state">ROOM SCAN</p><h3>Scan</h3><p>Detect compatible beacons nearby. Nothing guides the user yet.</p></li>
+          <li data-reveal><p class="flow-number">02</p><p class="flow-state">ONE TARGET</p><h3>Select</h3><p>Short press cycles choices. Long press confirms one destination.</p></li>
+          <li data-reveal><p class="flow-number">03</p><p class="flow-state">GUIDE MODE</p><h3>Feel proximity</h3><p>Only the selected tag drives haptics: far, medium, near.</p></li>
+          <li data-reveal><p class="flow-number">04</p><p class="flow-state">STANDBY</p><h3>Arrive or cancel</h3><p>A distinct pattern marks arrival. Long press cancels at any time.</p></li>
+        </ol>
+        <aside class="signal-note" data-reveal aria-label="Important signal limitation">
+          <p class="eyebrow">IMPORTANT LIMIT</p>
+          <p>BLE RSSI is approximate proximity only. It does not provide exact distance, direction, alignment, or safe passage.</p>
+        </aside>
+        <figure class="haptic-context" data-reveal>
+          <img src="assets/haptic-context-concept.webp" alt="Concept visual showing the haptic receiver in front of a tactile Braille sign and BLE wall tag.">
+          <figcaption>
+            <p class="eyebrow">A SELECTED SIGNAL, NOT A CROWD OF ALERTS</p>
+            <h3>The receiver feels one target at a time.</h3>
+            <p>Many tags may exist in a room. Only the selected tag shapes the haptic pattern during guide mode.</p>
+          </figcaption>
+        </figure>
+      </section>
+
+      <section id="progress" class="section progress" aria-labelledby="progress-title">
+        <div class="section-label" data-reveal>05 / OPEN BUILD LOG</div>
+        <div class="progress-heading">
+          <h2 id="progress-title" data-reveal>A concept with its work<br>still visible.</h2>
+          <p data-reveal>Open Braille Beacon is at the concept-and-roadmap stage. The work below is documented in the repository so the path to a bench-tested prototype stays inspectable.</p>
+        </div>
+        <div class="progress-layout">
+          <figure class="cad-sheet" data-reveal>
+            <img src="assets/receiver-cad-concept.webp" alt="Engineering concept sheet showing planned views and dimensions of the haptic receiver clip.">
+            <figcaption>Receiver Clip concept sheet · Not a production drawing</figcaption>
+          </figure>
+          <div class="milestones">
+            <a data-reveal href="https://github.com/Lamdevelopper/Open-Braille_beacon/blob/main/protocol/protocol-v0.1.md" target="_blank" rel="noreferrer"><span>01</span><div><h3>Protocol v0.1</h3><p>Compact BLE fields and selected-tag behavior are specified.</p></div></a>
+            <a data-reveal href="https://github.com/Lamdevelopper/Open-Braille_beacon/tree/main/cad/cadquery" target="_blank" rel="noreferrer"><span>02</span><div><h3>Parametric CAD</h3><p>Tag enclosure models are available as working source.</p></div></a>
+            <a data-reveal href="https://github.com/Lamdevelopper/Open-Braille_beacon/blob/main/context/general/project-plan-checklist.md" target="_blank" rel="noreferrer"><span>03</span><div><h3>Haptic interaction</h3><p>The one-button, single-target v1 flow is defined.</p></div></a>
+            <a data-reveal href="https://github.com/Lamdevelopper/Open-Braille_beacon/blob/main/context/general/project-plan-checklist.md" target="_blank" rel="noreferrer"><span>04</span><div><h3>Bench validation next</h3><p>Fit, power, signal stability, and haptic behavior still need physical testing.</p></div></a>
+          </div>
+        </div>
+      </section>
+
+      <section id="funding" class="section funding" aria-labelledby="funding-title">
+        <div class="funding-aside" data-reveal>
+          <p class="section-label">06 / WHAT FUNDING UNLOCKS</p>
+          <p class="funding-stamp">NEXT<br>BUILD</p>
+        </div>
+        <div class="funding-copy">
+          <h2 id="funding-title" data-reveal>Turn the concept into a <span class="funding-title-accent">bench-tested prototype.</span></h2>
+          <p class="body-large" data-reveal>Funding will cover the small, real parts needed to move from specification to evidence: BLE modules, tag power hardware, a receiver development board, a haptic motor with its proper driver, fit-test prints, and signal-validation fixtures.</p>
+          <p class="caution" data-reveal>The goal is not a polished promise. It is repeatable hardware evidence, clear limits, and an open record of what works next.</p>
+        </div>
+      </section>
+
+      <section id="contribute" class="contribute" aria-labelledby="contribute-title">
+        <div class="contribute-inner">
+          <div>
+            <p class="section-label section-label--light" data-reveal>07 / BUILD IN THE OPEN</p>
+            <h2 id="contribute-title" data-reveal>Make tactile information<br>easier to find.</h2>
+          </div>
+          <div class="contribute-copy" data-reveal>
+            <p>Contributions are welcome across CAD, BLE and firmware, practical hardware testing, documentation, and accessibility review.</p>
+            <a class="button button-light" href="https://github.com/Lamdevelopper/Open-Braille_beacon" target="_blank" rel="noreferrer">Explore the repository</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-brand">
+        <span class="footer-logo" aria-hidden="true"><img src="assets/brand-logo-sheet.webp" alt=""></span>
+        <span>Open Braille Beacon</span>
+      </div>
+      <p>Open-source assistive location cue. Not certified indoor navigation.</p>
+      <a href="https://github.com/Lamdevelopper/Open-Braille_beacon" target="_blank" rel="noreferrer">GitHub</a>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,20 +1,20 @@
-[stderr] INFO:     Started server process [32004]
+[stderr] INFO:     Started server process [40560]
 [stderr] INFO:     Waiting for application startup.
 [stderr] INFO:     Application startup complete.
 [stderr] INFO:     Uvicorn running on http://127.0.0.1:8765 (Press CTRL+C to quit)
-INFO:     127.0.0.1:64238 - "GET /health HTTP/1.1" 200 OK
-[stderr] INFO:     ('127.0.0.1', 64239) - "WebSocket /ws" [accepted]
-[stderr] 2026-06-21 09:28:52 INFO     [codeboarding_pro.ws.server:258] WebSocket connected: session 4b487bfd-ded0-4e19-9120-d7e28f3c0394
+INFO:     127.0.0.1:56923 - "GET /health HTTP/1.1" 200 OK
+[stderr] INFO:     ('127.0.0.1', 56924) - "WebSocket /ws" [accepted]
+[stderr] 2026-06-22 21:42:05 INFO     [codeboarding_pro.ws.server:258] WebSocket connected: session e647e5a5-64c7-44f0-bd1d-0f172d1c0063
 [stderr] INFO:     connection open
-[stderr] 2026-06-21 09:28:53 INFO     [tool_registry.manifest:320] has_required_tools: csharp missing or stale at C:\Users\lamoy\.codeboarding\servers\bin\win\pm-tools\csharp-ls\csharp-ls.exe
-[stderr] 2026-06-21 09:28:54 INFO     [tool_registry.manifest:320] has_required_tools: csharp missing or stale at C:\Users\lamoy\.codeboarding\servers\bin\win\pm-tools\csharp-ls\csharp-ls.exe
-[stderr] 2026-06-21 09:28:54 INFO     [tool_registry.installers:451] Installing Node.js packages: ['pyright@1.1.400', 'typescript-language-server@4.3.4', 'typescript@5.7', 'intelephense@1.16.5']
-[stderr] 2026-06-21 09:28:58 INFO     [tool_registry.installers:465] Node.js packages installed successfully
-[stderr] 2026-06-21 09:28:58 INFO     [tool_registry.installers:225]   tokei: already installed, skipping
-[stderr] 2026-06-21 09:28:58 INFO     [tool_registry.installers:225]   gopls: already installed, skipping
-[stderr] 2026-06-21 09:28:58 INFO     [tool_registry.installers:225]   rust-analyzer: already installed, skipping
-[stderr] 2026-06-21 09:29:08 INFO     [tool_registry.installers:489] java already installed
-[stderr] 2026-06-21 09:29:08 WARNING  [tool_registry.installers:397]   csharp-ls: dotnet install failed (exit 2147516571): The command could not be loaded, possibly because:
+[stderr] 2026-06-22 21:42:05 INFO     [tool_registry.manifest:320] has_required_tools: csharp missing or stale at C:\Users\lamoy\.codeboarding\servers\bin\win\pm-tools\csharp-ls\csharp-ls.exe
+[stderr] 2026-06-22 21:42:06 INFO     [tool_registry.manifest:320] has_required_tools: csharp missing or stale at C:\Users\lamoy\.codeboarding\servers\bin\win\pm-tools\csharp-ls\csharp-ls.exe
+[stderr] 2026-06-22 21:42:06 INFO     [tool_registry.installers:451] Installing Node.js packages: ['pyright@1.1.400', 'typescript-language-server@4.3.4', 'typescript@5.7', 'intelephense@1.16.5']
+[stderr] 2026-06-22 21:42:09 INFO     [tool_registry.installers:465] Node.js packages installed successfully
+[stderr] 2026-06-22 21:42:09 INFO     [tool_registry.installers:225]   tokei: already installed, skipping
+[stderr] 2026-06-22 21:42:09 INFO     [tool_registry.installers:225]   gopls: already installed, skipping
+[stderr] 2026-06-22 21:42:09 INFO     [tool_registry.installers:225]   rust-analyzer: already installed, skipping
+[stderr] 2026-06-22 21:42:09 INFO     [tool_registry.installers:489] java already installed
+[stderr] 2026-06-22 21:42:09 WARNING  [tool_registry.installers:397]   csharp-ls: dotnet install failed (exit 2147516571): The command could not be loaded, possibly because:
 [stderr]   * You intended to execute a .NET application:
 [stderr]       The application 'tool' does not exist or is not a managed .dll or .exe.
 [stderr]   * You intended to execute a .NET SDK command:
@@ -26,12 +26,18 @@ INFO:     127.0.0.1:64238 - "GET /health HTTP/1.1" 200 OK
 [stderr] Learn about SDK resolution:
 [stderr] https://aka.ms/dotnet/sdk-not-found
 [stderr] 
-[stderr] 2026-06-21 09:29:09 INFO     [codeboarding_pro.lsp.bootstrap:56] LSP startup attempt 1/3
-[stderr] 2026-06-21 09:29:09 INFO     [codeboarding_pro.session:187] Session 4b487bfd-ded0-4e19-9120-d7e28f3c0394 initialized: repo=C:\Users\lamoy\Desktop\proyectos_coding\Braille_beacon, project=Braille_beacon, output=C:\Users\lamoy\Desktop\proyectos_coding\Braille_beacon\.codeboarding
-[stderr] 2026-06-21 09:29:10 INFO     [static_analyzer:227] Starting engine LSP client for Python at C:\Users\lamoy\Desktop\proyectos_coding\Braille_beacon
-[stderr] 2026-06-21 09:29:11 INFO     [static_analyzer:252] Python LSP start: 1.2s
-[stderr] 2026-06-21 09:29:11 INFO     [codeboarding_pro.file_monitor:106] FileMonitor started for C:\Users\lamoy\Desktop\proyectos_coding\Braille_beacon
-[stderr] 2026-06-21 09:29:11 INFO     [codeboarding_pro.session:205] Session 4b487bfd-ded0-4e19-9120-d7e28f3c0394: FileMonitor activated
-[stderr] 2026-06-21 09:29:11 INFO     [codeboarding_pro.head_watcher:48] HeadWatcher started on C:\Users\lamoy\Desktop\proyectos_coding\Braille_beacon\.git\HEAD
-[stderr] 2026-06-21 09:29:11 INFO     [codeboarding_pro.session:250] Session 4b487bfd-ded0-4e19-9120-d7e28f3c0394: LSP wiring complete
-[stderr] 2026-06-21 09:29:11 INFO     [codeboarding_pro.lsp.bootstrap:67] LSP clients started successfully (attempt 1)
+[stderr] 2026-06-22 21:42:09 INFO     [codeboarding_pro.lsp.bootstrap:56] LSP startup attempt 1/3
+[stderr] 2026-06-22 21:42:09 INFO     [codeboarding_pro.session:187] Session e647e5a5-64c7-44f0-bd1d-0f172d1c0063 initialized: repo=C:\Users\lamoy\Desktop\proyectos_coding\Open-Braille_beacon, project=Open-Braille_beacon, output=C:\Users\lamoy\Desktop\proyectos_coding\Open-Braille_beacon\.codeboarding
+[stderr] 2026-06-22 21:42:10 WARNING  [static_analyzer:65] Unsupported programming language: CSS. Skipping.
+[stderr] 2026-06-22 21:42:10 WARNING  [static_analyzer:65] Unsupported programming language: HTML. Skipping.
+[stderr] 2026-06-22 21:42:10 WARNING  [static_analyzer.typescript_config_scanner:59] No TypeScript configuration files found in C:\Users\lamoy\Desktop\proyectos_coding\Open-Braille_beacon
+[stderr] 2026-06-22 21:42:10 INFO     [static_analyzer:111] No TypeScript config files found, using repository root for JavaScript
+[stderr] 2026-06-22 21:42:10 INFO     [static_analyzer:227] Starting engine LSP client for JavaScript at C:\Users\lamoy\Desktop\proyectos_coding\Open-Braille_beacon
+[stderr] 2026-06-22 21:42:10 INFO     [static_analyzer:252] JavaScript LSP start: 0.4s
+[stderr] 2026-06-22 21:42:10 INFO     [static_analyzer:227] Starting engine LSP client for Python at C:\Users\lamoy\Desktop\proyectos_coding\Open-Braille_beacon
+[stderr] 2026-06-22 21:42:11 INFO     [static_analyzer:252] Python LSP start: 0.5s
+[stderr] 2026-06-22 21:42:11 INFO     [codeboarding_pro.file_monitor:106] FileMonitor started for C:\Users\lamoy\Desktop\proyectos_coding\Open-Braille_beacon
+[stderr] 2026-06-22 21:42:11 INFO     [codeboarding_pro.session:205] Session e647e5a5-64c7-44f0-bd1d-0f172d1c0063: FileMonitor activated
+[stderr] 2026-06-22 21:42:11 INFO     [codeboarding_pro.head_watcher:48] HeadWatcher started on C:\Users\lamoy\Desktop\proyectos_coding\Open-Braille_beacon\.git\HEAD
+[stderr] 2026-06-22 21:42:11 INFO     [codeboarding_pro.session:250] Session e647e5a5-64c7-44f0-bd1d-0f172d1c0063: LSP wiring complete
+[stderr] 2026-06-22 21:42:11 INFO     [codeboarding_pro.lsp.bootstrap:67] LSP clients started successfully (attempt 1)
